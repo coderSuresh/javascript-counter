@@ -9,8 +9,8 @@ body {
 .card {
     text-align: center;
     background-color: white;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 100px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
 }
 
@@ -29,4 +29,25 @@ a {
 
 a:hover {
     opacity: 0.7;
+}
+
+@media (max-width:960px) {
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 40px;
+    }
 }

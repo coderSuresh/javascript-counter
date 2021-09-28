@@ -1,14 +1,6 @@
-var decrease = document.getElementById('btn_decrease');
-var increase = document.getElementById('btn_increase');
-var reset = document.getElementById('btn_reset');
-var number = document.getElementById('number');
+const number = document.getElementById("number");
 
 var n = 0;
-
-function increaser() {
-    n++;
-    number.innerHTML = n;
-}
 
 function decreaser() {
     n--;
@@ -17,5 +9,10 @@ function decreaser() {
 
 function reseter() {
     n = 0;
+    number.innerHTML = n;
+}
+
+function increaser() {
+    n++;
     number.innerHTML = n;
 }
